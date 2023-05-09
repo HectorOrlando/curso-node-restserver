@@ -8,50 +8,10 @@
 	},
 	"item": [
 		{
-			"name": "1- primera REST Servert, cascarón.",
+			"name": "1- primera REST Servert, cascarón. 1.0.0-rc-1",
 			"item": [
 				{
-					"name": "http://localhost:8080/api/users?id=3032&name=Hector&age=47",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Hector Orlando\",\r\n    \"age\": 47\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/users/3032",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"users",
-								"3032"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "http://localhost:8080/api/users?id=3032&name=Hector&age=47 Copy",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "GET",
 						"header": [
@@ -62,38 +22,19 @@
 								"disabled": true
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Hector Orlando\",\r\n    \"age\": 47\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "http://localhost:8080/api/users?id=3032&name=Hector&age=47",
-							"protocol": "http",
+							"raw": "{{url}}/api/users?limit=2",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"users"
 							],
 							"query": [
 								{
-									"key": "id",
-									"value": "3032"
-								},
-								{
-									"key": "name",
-									"value": "Hector"
-								},
-								{
-									"key": "age",
-									"value": "47"
+									"key": "limit",
+									"value": "2"
 								}
 							]
 						}
@@ -101,7 +42,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:8080/api/users?id=3032&name=Hector&age=47 Copy 2",
+					"name": "http://localhost:8080/api/users",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -114,7 +55,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Hector Orlando\",\r\n    \"age\": 47\r\n}",
+							"raw": "{\r\n    \"name\": \"Test- 16\",\r\n    \"email\": \"test-16-@test.com\",\r\n    \"password\": \"1234tttt$$\",\r\n    \"img\": \"no image\",\r\n    \"role\": \"USER_ROLE\",\r\n    \"status\": true,\r\n    \"goole\": false,\r\n    \"nuevoCampo\": true\r\n}\r\n\r\n// {\r\n//     \"name\": \"Test 1\",\r\n//     \"email\": \"test-1-@test.com\",\r\n//     \"password\": \"1234tttt$$\",\r\n//     \"img\": \"no image\",\r\n//     \"role\": \"USER_ROLE\",\r\n//     \"status\": true,\r\n//     \"goole\": false,\r\n//     \"nuevoCampo\": true\r\n// },\r\n// {\r\n//     \"name\": \"Test 2\",\r\n//     \"email\": \"Test-2-@Test.com\",\r\n//     \"password\": \"1234tttt$$\",\r\n//     \"img\": \"no image\",\r\n//     \"role\": \"USER_ROLE\",\r\n//     \"status\": true,\r\n//     \"goole\": false,\r\n//     \"nuevoCampo\": true\r\n// }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -122,29 +63,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/users?id=3032&name=Hector&age=47",
-							"protocol": "http",
+							"raw": "{{url}}/api/users",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"users"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "3032"
-								},
-								{
-									"key": "name",
-									"value": "Hector"
-								},
-								{
-									"key": "age",
-									"value": "47"
-								}
 							]
 						}
 					},
@@ -172,29 +97,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/users?id=3032&name=Hector&age=47",
-							"protocol": "http",
+							"raw": "{{url}}/api/users/645a2b4838684af35b507211",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
-								"users"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "3032"
-								},
-								{
-									"key": "name",
-									"value": "Hector"
-								},
-								{
-									"key": "age",
-									"value": "47"
-								}
+								"users",
+								"645a2b4838684af35b507211"
 							]
 						}
 					},
@@ -222,12 +132,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/users?id=3032&name=Hector&age=47",
-							"protocol": "http",
+							"raw": "{{url}}/api/users?id=3032&name=Hector&age=47",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"users"
@@ -245,6 +153,41 @@
 									"key": "age",
 									"value": "47"
 								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/users?id=3032&name=Hector&age=47 Copy 5",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"email\": \"test-1-@test.com\",\r\n    \"name\": \"Test Hector\",\r\n    \"password\": \"1234tttt$$\",\r\n    \"role\": \"USER_ROLE\",\r\n    \"goole\": true\r\n}\r\n\r\n// {\r\n//     \"name\": \"Test 1\",\r\n//     \"email\": \"test-1-@test.com\",\r\n//     \"password\": \"1234tttt$$\",\r\n//     \"img\": \"no image\",\r\n//     \"role\": \"USER_ROLE\",\r\n//     \"status\": true,\r\n//     \"goole\": false,\r\n//     \"nuevoCampo\": true\r\n// },\r\n// {\r\n//     \"name\": \"Test 2\",\r\n//     \"email\": \"Test-2-@Test.com\",\r\n//     \"password\": \"1234tttt$$\",\r\n//     \"img\": \"no image\",\r\n//     \"role\": \"USER_ROLE\",\r\n//     \"status\": true,\r\n//     \"goole\": false,\r\n//     \"nuevoCampo\": true\r\n// }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/users/6458d10650274a1b06f5ed9d",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"6458d10650274a1b06f5ed9d"
 							]
 						}
 					},
